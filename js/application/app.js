@@ -690,9 +690,9 @@ define([
           title: "Daily Temperatures",
           titleGap: 10,
           titleOrientation: "away",
-          titleFont: "normal normal normal 13pt Avenir Next W02",
+          titleFont: "normal normal normal 13pt Avenir Next W00",
           titleFontColor: "#2493f2",
-          font: "normal normal normal 8pt Avenir Next W01",
+          font: "normal normal normal 8pt Avenir Next W00",
           labelFunc: (text, value, precision) => {
 
             const currentYearStart = new Date(Date.UTC(this.settings.currentYear, 0, 1, 0, 0, 0, 0));
@@ -730,7 +730,7 @@ define([
           titleOrientation: "axis",
           titleFontColor: "#2493f2",
           fontColor: "#2493f2",
-          font: "normal normal normal 8pt Avenir Next W01"
+          font: "normal normal normal 8pt Avenir Next W00"
         });
 
         // FAHRENHEIT AXIS //
@@ -745,7 +745,7 @@ define([
           titleOrientation: "away",
           titleFontColor: "#2493f2",
           fontColor: "#2493f2",
-          font: "normal normal normal 8pt Avenir Next W01"
+          font: "normal normal normal 8pt Avenir Next W00"
         });
 
         // TEMPERATURES SERIES //
@@ -808,7 +808,7 @@ define([
           offset: { y: -20, x: 0 },
           fill: "#242424",
           fontColor: "#2493f2",
-          font: "normal normal normal 13pt Avenir Next W01",
+          font: "normal normal normal 13pt Avenir Next W00",
           labelFunc: (text, values) => {
             const dataInfo = temperatureChart.getSeries("Temperatures C").data.find((dataObj) => {
               return (dataObj.x === values[0]);
